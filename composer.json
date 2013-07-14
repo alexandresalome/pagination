@@ -5,7 +5,7 @@
     "autoload": {
         "psr-0": { "Alex\\Pagination": "" }
     },
-    "target-dir": "Alex/MailCatcher",
+    "target-dir": "Alex/Pagination",
     "require": {
         "php":            ">=5.3.3"
     }

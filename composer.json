@@ -1,5 +1,5 @@
 {
-    "name": "alex/pagination",
+    "name": "alexandresalome/pagination",
     "description": "Pager and pagination library",
     "licence": "MIT",
     "autoload": {

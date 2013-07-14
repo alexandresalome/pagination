@@ -1,0 +1,12 @@
+{
+    "name": "alex/pagination",
+    "description": "Pager and pagination library",
+    "licence": "MIT",
+    "autoload": {
+        "psr-0": { "Alex\\Pagination": "" }
+    },
+    "target-dir": "Alex/MailCatcher",
+    "require": {
+        "php":            ">=5.3.3"
+    }
+}

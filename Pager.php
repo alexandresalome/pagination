@@ -67,6 +67,8 @@ class Pager implements \IteratorAggregate, \Countable
     public function setPage($page)
     {
         $this->offset = (max(1, (int) $page) - 1) * $this->perPage;
+
+        return $this;
     }
 
     /**
@@ -97,6 +99,18 @@ class Pager implements \IteratorAggregate, \Countable
     public function setPerPage($perPage)
     {
         $this->perPage = (int) $perPage;
+
+        return $this;
+    }
+
+    public function getPerPage()
+    {
+        return $this->perPage;
+    }
+
+    public function getLimit()
+    {
+        return $this->perPage;
     }
 
     public function count()
@@ -124,5 +138,18 @@ class Pager implements \IteratorAggregate, \Countable
     public function getIterator()
     {
         return new \ArrayIterator($this->adapter->get($this->offset, $this->perPage));
+    }
+
+    /**
+     * Returns an array of page numbers for a given range.
+     *
+     * @return array
+     */
+    public function getPageRange($range = 4)
+    {
+        $from = max(1, $this->getPage() - $range);
+        $to = min($this->getPageCount(), $this->getPage() + $range);
+
+        return range($from, $to);
     }
 }

@@ -1,7 +1,7 @@
 {
     "name": "alexandresalome/pagination",
     "description": "Pager and pagination library",
-    "licence": "MIT",
+    "license": "MIT",
     "autoload": {
         "psr-0": { "Alex\\Pagination": "" }
     },

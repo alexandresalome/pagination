@@ -11,5 +11,5 @@
     },
     "suggest": {
         "doctrine/orm": "Enable Doctrine QueryBuilder ORM"
-    },
+    }
 }

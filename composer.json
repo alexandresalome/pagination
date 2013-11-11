@@ -8,5 +8,8 @@
     "target-dir": "Alex/Pagination",
     "require": {
         "php":            ">=5.3.3"
+    },
+    "suggest": {
+        "doctrine/orm": "Enable Doctrine QueryBuilder ORM"
     }
 }

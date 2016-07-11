@@ -7,7 +7,7 @@ Pagination
 
 **Requirements**: PHP 5.3
 
-STILL IN DEVELOPMENT
+**DEPRECATED**: this library is deprecated. It is recommended to use pagerfanta.
 
 Personal library used to paginate stuff.
 
